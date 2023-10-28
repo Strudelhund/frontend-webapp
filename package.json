@@ -13,12 +13,6 @@
     "test:coverage": "jest --coverage",
     "lint": "eslint ."
   },
-  "jest": {
-    "automock": false,
-    "setupFiles": [
-      "./setupJest.js"
-    ]
-  },
   "name": "webeng",
   "version": "1.0.0",
   "main": "index.js",
