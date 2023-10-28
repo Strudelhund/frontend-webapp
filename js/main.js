@@ -50,7 +50,7 @@ document.getElementById("myForm").addEventListener("submit", function (event) {
     }
 
     // Check if the email is already stored in local storage
-    const storedData = JSON.parse(localStorage.getItem('formData'));
+    const storedData = JSON.parse(localStorage.getItem("formData"));
     if (storedData && storedData.email === emailInput.value) {
         emailError.textContent = "Email is already in use.";
         emailInput.classList.add("error");
@@ -72,6 +72,6 @@ document.getElementById("myForm").addEventListener("submit", function (event) {
         };
 
         // Convert the formData object to a JSON string and store it in localStorage
-        localStorage.setItem('formData', JSON.stringify(formData));
+        localStorage.setItem("formData", JSON.stringify(formData));
     }
 });
