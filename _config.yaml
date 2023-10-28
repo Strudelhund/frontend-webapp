@@ -1,0 +1,9 @@
+headers:
+  -   - key: Access-Control-Allow-Origin
+          value: '*'
+  -   - key: Access-Control-Allow-Methods
+          value: 'POST, GET, OPTIONS, DELETE, PUT'
+  -   - key: Access-Control-Allow-Headers
+          value: 'x-requested-with, Content-Type, origin, authorization, accept, client-security-token'
+  -   - key: Access-Control-Max-Age
+          value: '1000'
