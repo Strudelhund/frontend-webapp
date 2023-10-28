@@ -4,13 +4,13 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Function to fetch and render dog images
     function fetchAndRenderImages() {
-        contentContainer.innerHTML = ''; // Clear previous images
+        contentContainer.innerHTML = ""; // Clear previous images
 
         // Fetch data from an API: 3 dog images
-        fetch('https://dog.ceo/api/breeds/image/random/3')
+        fetch("https://dog.ceo/api/breeds/image/random/3")
             .then(response => response.json())
             .then(data => {
-                if (data.status === 'success') {
+                if (data.status === "success") {
                     const images = data.message;
 
                     // Set a fixed width and height for the images
@@ -46,15 +46,15 @@ document.addEventListener("DOMContentLoaded", function () {
                     });
                 }
             })
-            .catch(error => console.error('Error fetching dog images:', error));
+            .catch(error => console.error("Error fetching dog images:", error));
     }
 
     function fetchAndReplaceImage(image) {
         // Fetch a new dog image and replace the failed image
-        fetch('https://dog.ceo/api/breeds/image/random/1')
+        fetch("https://dog.ceo/api/breeds/image/random/1")
             .then(response => response.json())
             .then(data => {
-                if (data.status === 'success' && data.message.length > 0) {
+                if (data.status === "success" && data.message.length > 0) {
                     const newImageUrl = data.message[0];
                     image.src = newImageUrl;
                     img = document.createElement("img");
@@ -64,7 +64,7 @@ document.addEventListener("DOMContentLoaded", function () {
                         contentContainer.appendChild(img);
                 }
             })
-            .catch(error => console.error('Error fetching replacement image:', error));
+            .catch(error => console.error("Error fetching replacement image:", error));
     }
 
     // Initial fetch and render
