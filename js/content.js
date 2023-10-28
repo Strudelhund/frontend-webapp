@@ -58,7 +58,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     const newImageUrl = data.message[0];
                     image.src = newImageUrl;
                     img = document.createElement("img");
-                        img.src = imageUrl;
+                        img.src = newImageUrl;
                         img.style.width = imageWidth;
                         img.style.height = imageHeight;
                         contentContainer.appendChild(img);
