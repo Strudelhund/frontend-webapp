@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Title</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="/js/content.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li id="page1-link"><a href="page1.html">About</a></li>
+                <li id="page2-link"><a href="page2.html">Contents</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Contents</h1>
+        <h2 class = "centered-h2">Generate some Doggo pictures and add them to your favorites by clicking the images!</h2>
+
+        <button id="refresh-button">Generate Doggies</button>
+
+        <p>Click on the "Generate" Button to get some cute Doggo pictures.</p>
+
+        <p>If you want to add one picture to your favorites just click on it!.</p>
+
+        <div id="content">
+            <!-- Content will be added dynamically from the API -->
+        </div>
+        <div id="favorites">
+            <h2>Your Favorites</h2>
+            <p>You can create a collection of your favorite pictures here.</p>
+
+            <p>To remove a picture from your favorites just click on it!.</p>
+            <ul id="favorites-list">
+                <!-- Favorite items will be added here -->
+            </ul>
+        </div>
+    </main>
+</body>
+</html>
