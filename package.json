@@ -8,11 +8,6 @@
     "jsdom": "^22.1.0",
     "node-fetch": "^3.3.2"
   },
-  "scripts": {
-    "test": "jest",
-    "test:coverage": "jest --coverage",
-    "lint": "eslint ."
-  },
   "name": "webeng",
   "version": "1.0.0",
   "main": "index.js",
